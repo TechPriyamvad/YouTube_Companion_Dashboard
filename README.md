@@ -136,18 +136,6 @@ A minimal full-stack MVP for managing YouTube videos with notes, comments, and A
 
 3. **Live URL:** https://you-tube-companion-dashboard-henna.vercel.app/
 
-## Key Features Summary
-
-| Feature | Status |
-|---------|--------|
-| Display video details | ✅ |
-| Update video metadata | ✅ |
-| Comments (CRUD) | ✅ |
-| Notes (CRUD + Search) | ✅ |
-| AI Title Suggestions | ✅ |
-| Event Logging | ✅ |
-| Responsive UI | ✅ |
-
 ## Event Logs Example
 
 The app logs the following actions:
