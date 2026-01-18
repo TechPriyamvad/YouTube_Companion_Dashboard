@@ -45,7 +45,7 @@ A minimal full-stack MVP for managing YouTube videos with notes, comments, and A
 
 3. **Create `.env.local` file with:**
    ```env
-   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/youtube-dashboard
+   MONGODB_URI=your_mongodb_connection_string
    YOUTUBE_API_KEY=your_youtube_api_key
    YOUTUBE_VIDEO_ID=your_video_id
    OPENAI_API_KEY=your_openai_api_key
@@ -63,30 +63,36 @@ A minimal full-stack MVP for managing YouTube videos with notes, comments, and A
 ## API Endpoints
 
 ### Video Management
+
 - `GET /api/video` - Fetch video details
 - `PATCH /api/video` - Update title and description
 
 ### Comments
+
 - `GET /api/comments` - Fetch all comments on video
 - `POST /api/comments` - Add a new comment
 - `DELETE /api/comments/[id]` - Delete a comment
 
 ### Notes
+
 - `GET /api/notes` - Get all notes (supports search via `?q=query`)
 - `POST /api/notes` - Create a new note
 - `PATCH /api/notes/[id]` - Update a note
 - `DELETE /api/notes/[id]` - Delete a note
 
 ### AI
+
 - `POST /api/ai/titles` - Generate 3 alternative title suggestions
 
 ### Logs
+
 - `GET /api/logs` - Get event logs
 - `POST /api/logs` - Create event log
 
 ## Database Schema
 
 ### Notes Collection
+
 ```
 {
   _id: ObjectId
@@ -99,6 +105,7 @@ A minimal full-stack MVP for managing YouTube videos with notes, comments, and A
 ```
 
 ### EventLogs Collection
+
 ```
 {
   _id: ObjectId
@@ -110,15 +117,6 @@ A minimal full-stack MVP for managing YouTube videos with notes, comments, and A
   updatedAt: Date
 }
 ```
-
-## Environment Variables
-
-| Variable | Description |
-|----------|-------------|
-| `MONGODB_URI` | MongoDB connection string |
-| `YOUTUBE_API_KEY` | YouTube Data API v3 key |
-| `YOUTUBE_VIDEO_ID` | Your uploaded video ID |
-| `OPENAI_API_KEY` | OpenAI API key |
 
 ## Deployment to Vercel
 
@@ -174,11 +172,3 @@ The app logs the following actions:
 **OpenAI Error:**
 - Verify API key is valid
 - Check account has credits
-
-## Author
-
-Built as a full-stack hiring test MVP - January 18, 2026
-
----
-
-**Time spent:** ~3 hours | **Lines of code:** ~1000+ | **Features:** 8/8 MVP complete
