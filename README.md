@@ -136,7 +136,7 @@ A minimal full-stack MVP for managing YouTube videos with notes, comments, and A
    - Add environment variables in Vercel dashboard
    - Deploy!
 
-3. **Live URL:** https://your-project.vercel.app
+3. **Live URL:** https://you-tube-companion-dashboard-henna.vercel.app/
 
 ## Key Features Summary
 
